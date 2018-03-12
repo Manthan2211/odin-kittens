@@ -19,7 +19,7 @@ class KittensController < ApplicationController
      redirect_to @kitten
     else
       flash[:danger] = 'Kitten Cant Created'
-      redirect_to root_url
+      render 'new'
     end
   end
 

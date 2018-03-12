@@ -6,13 +6,13 @@
       <%= f.text_field :name, class: 'form-control' %>
 
       <%= f.label :age %>
-      <%= f.number_field :age, class: 'form-control' %>
+      <%= f.number_field :age, class: 'form-control', in: 1...100 %>
 
       <%= f.label :cuteness %>
-      <%= f.number_field :cuteness, class: 'form-control' %>
+      <%= f.number_field :cuteness, class: 'form-control', in: 1...11 %>
 
-      <%= f.label :softness, "Confirmation" %>
-      <%= f.number_field :softness, class: 'form-control' %>
+      <%= f.label :softness %>
+      <%= f.number_field :softness, class: 'form-control', in: 1...11 %>
 
        <%= f.label :image %>
       <%= f.file_field :image, class: 'form-control', accept: 'image/png,image/gif,image/jpeg' %>
