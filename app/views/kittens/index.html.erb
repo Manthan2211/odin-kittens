@@ -1,0 +1,10 @@
+<h1> All Kittens </h1>
+<%= will_paginate %>
+
+<ul class="users">
+  <% @kittens.each do |kitten| %>
+    <%=render kitten%>
+  <% end %>
+</ul>
+
+<%= will_paginate %>
