@@ -17,6 +17,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails'
 gem 'sqlite3'
 
+
 gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
 
