@@ -8,10 +8,7 @@
 
       def index
         @kittens = Kitten.paginate(page: params[:page], per_page: 10)
-        respond_to do |format|
-          format.html
-          format.json{ render :json => @kittens }
-        end 
+        render :json => @kittens
       end
 
       def create
@@ -42,10 +39,8 @@
 
       def show
         @kitten=Kitten.find(params[:id])
-        respond_to do |format|
-          format.html
-          format.json{ render :json => @kitten }
-        end 
+          render :json => @kitten 
+       
       end
 
       def destroy
